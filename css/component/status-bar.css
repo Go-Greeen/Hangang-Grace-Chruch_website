@@ -28,20 +28,20 @@ h3 {
 }
 
 .status-bar {
-  display: grid;
-  justify-content: center;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
   background-color: #fff;
-  padding: 54px 0;
+  border: 5px solid black;
+  display: flow-root;
 }
 
 .status-bar__title {
-  width: 100%;
+  float: left;
+  width: 100px;
+  height: 10px;
+  background-color: blue;
+  border: 1px solid black;
 }
 
 .status-bar__column {
-  width: 10%;
+  float: left;
+  padding-left: 3rem;
 }
