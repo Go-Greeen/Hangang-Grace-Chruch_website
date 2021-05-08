@@ -1,5 +1,6 @@
 .status-bar {
-  position: fixed;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
   padding-top: 10px;
   background-color: #fff;
   justify-content: center;
@@ -9,23 +10,20 @@
 }
 
 .status-bar__title img {
+  margin: auto;
+  display: block;
   width: auto;
-  height: 20px;
+  height: 40px;
 }
 
 .status-bar__mother__column {
-  padding-left: 20rem;
-  padding-right: 20rem;
   text-align: center;
 }
 
-.status-bar__column {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-span {
+.status-bar__column span {
   padding: 0.5rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .status-bar__icons {
@@ -42,6 +40,7 @@ span {
 
 .wrapper {
   padding-top: 30px;
+  padding-bottom: 50px;
   display: grid;
   grid-template-columns: 60% 40%;
   margin-left: 2rem;
@@ -50,7 +49,7 @@ span {
 }
 
 img {
-  width: auto%;
+  width: auto;
 }
 
 .featured-resource__media {
@@ -59,4 +58,39 @@ img {
 
 .featured-resource__text {
   font-size: 35px;
+}
+
+main {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+header {
+  font-size: 20px;
+  margin-top: 3rem;
+}
+
+.grouping {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.grouping a {
+  height: 350px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  outline: thin solid grey;
+}
+
+.grouping a img {
+  width: 300px;
+  height: auto;
+}
+
+.status-bar__icons {
+  padding: 0.5rem;
+  text-align: center;
 }
